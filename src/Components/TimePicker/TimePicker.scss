@@ -1,0 +1,66 @@
+.time-picker{
+    position: absolute;
+    width:200px;
+    height:max-content;
+    top:-110px;
+    background-color: whitesmoke;
+    box-shadow: 0 0 10px rgba(163, 163, 163, 0.651);
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    p{
+        margin:0;
+    }
+    .time-container{
+        padding:10px;
+        & > div{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            &>div{
+                &>span{
+                    margin-right: 5px;
+                    vertical-align: middle;
+                    display: inline-flex;
+                    svg{
+                        g{
+                            fill:red;
+                        }
+                    }
+                }
+                input{
+                    width:90px;
+                    border-radius:3px;
+                    border:2px solid #ddd;
+                }
+            }
+        }
+        & > p{
+            cursor: pointer;
+        }
+    }
+    .time-container-buttons{
+        padding:10px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &::before{
+            content: '';
+            position: absolute;
+            top:0;
+            left:0;
+            display: block;
+            height:1.5px;
+            width:100%;
+            background-color:rgb(212, 212, 212);
+        }
+        button{
+            background-color: transparent;
+            border:none;
+            outline:none;
+            font-weight: bolder;
+            cursor: pointer;
+        }
+    }
+}
