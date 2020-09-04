@@ -42,3 +42,10 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+
+# What's Inside
+- A virtual scroll calendar that uses height of a single calendar to scroll virtually and render other calendars in same DOM element.
+- A time selector with 24 hr time validation
+- A location selector with floating time and current location toggler
